@@ -69,10 +69,11 @@ body {
   width: 100%;
 }
 .bg-part{
-  border-bottom-left-radius: 70px;
+  /* border-bottom-left-radius: 70px;
   border-bottom-right-radius: 10px;
-  background-color: #ff1f30;
+  background-color: #ff1f30; */
     padding: 50px 50px 100px;
+    color: #111;
 }
 .home .content .banner-part .bg-img video{
  
@@ -97,12 +98,12 @@ body {
   font-size: 40px;
   line-height: 1.1em;
   font-weight: 400;
-  color: #ffffff;
+  /* color: #ffffff; */
   display: flex;
   gap: 15px;
 }
 .home .content .banner-part .bg-img .text-part h2 i {
-  color: #f1f1eb !important;
+  /* color: #f1f1eb !important; */
 }
 .home .content .banner-part .bg-img .text-part h3 {
   padding-right: 60px;
@@ -110,7 +111,7 @@ body {
   font-size: 20px;
   line-height: 1.4em;
   font-weight: 300;
-  color: #ffffff;
+  /* color: #ffffff; */
   margin-top: 1rem;
 }
 
