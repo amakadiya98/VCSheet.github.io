@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/css/selectize.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>FunderVc</title>
+</head>
+
+<body>
+    <div class="home">
+        <div class="container-fluid">
+            <div class="content">
+                <div class="row" data-sticky-container>
+                    <div class="col-lg-4">
+                        <div class='left-side'>
+                            <div class='vertical-row'>
+                                <a href='#' class="logo-link">
+                                    <img src='./assets/img/logo.svg' alt='logo' />
+                                </a>
+                                <div class='filter-box'>
+                                    <p>Filters</p>
+                                    <div class='selection'>
+                                        <label for='select-multiple-1'>Fund Type</label>
+                                        <select class="fundtype-multiple" name="states[]" multiple="multiple">
+                                            <option value="Accelerator">Accelerator</option>
+                                            <option value="Angel Investor">Angel Investor</option>
+                                            <option value="Angel Network">Angel Network</option>
+                                            <option value="Corporate VC">Corporate VC</option>
+                                            <option value="Family Office">Family Office</option>
+                                            <option value="Venture Fund">Venture Fund</option>
+                                        </select>
+                                    </div>
+                                    <div class='selection'>
+                                        <label for='fundstage-multiple'>Fund Stage</label>
+                                        <select class="fundstage-multiple" name="states1[]" multiple="multiple">
+                                            <option value="Pre-Seed">Pre-Seed</option>
+                                            <option value="Seed">Seed</option>
+                                            <option value="Series A">Series A</option>
+                                            <option value="Series B">Series B</option>
+                                            <option value="Series C">Series C</option>
+                                            <option value='Series D'>Series D</option>
+                                        </select>
+                                    </div>
+                                    <div class='selection'>
+                                        <label for='select-multiple-3'>Sectors</label>
+                                        <select class="sectors-multiple" name="states2[]" multiple="multiple">
+                                            <option value="Advanced Materials">Advanced Materials</option>
+                                            <option value="Advertising(AdTech)">Advertising(AdTech)</option>
+                                            <option value="Apps">Apps</option>
+                                            <option value="Arfitificial Intelligence & Machine Learning (AI/ML)">
+                                                Arfitificial Intelligence & Machine Learning (AI/ML)</option>
+                                            <option value="AssistiveTech">AssistiveTech</option>
+                                            <option value="AudioTech">AudioTech</option>
+                                            <option value="Augmented & Virtual Reality (AR/VR)">Augmented & Virtual
+                                                Reality (AR/VR)</option>
+                                            <option value="B2B">B2B</option>
+                                            <option value="B2C">B2C</option>
+                                            <option value="Beauty">Beauty</option>
+                                            <option value="Big Data & Analytics">Big Data & Analytics</option>
+                                            <option value="BioTech">BioTech</option>
+                                            <option value="Black / African American Founded">Black / African American
+                                                Founded</option>
+                                            <option value="CMS">CMS</option>
+                                            <option value="CPG">CPG</option>
+                                            <option value="CRM">CRM</option>
+                                            <option value="Cannabis">Cannabis</option>
+                                            <option value="ClimateTech & CleanTech">ClimateTech & CleanTech</option>
+                                            <option value="CloudTech">CloudTech</option>
+                                            <option value="Collaboration">Collaboration</option>
+                                            <option value="Communications Infrastructure">Communications Infrastructure
+                                            </option>
+                                            <option value="Community">Community</option>
+                                            <option value="Computer">Computer</option>
+                                            <option value="Construction Tech">Construction Tech</option>
+                                            <option value="Consulting">Consulting</option>
+                                            <option value="Consumer">Consumer</option>
+                                            <option value="Consumer Electronics">Consumer Electronics</option>
+                                            <option value="Consumer Goods">Consumer Goods</option>
+                                            <option value="Consumer Internet">Consumer Internet</option>
+                                            <option value="Creator Economy">Creator Economy</option>
+                                            <option value="Cryptocurrency / Blockchain">Cryptocurrency / Blockchain
+                                            </option>
+                                            <option value="Customer Service">Customer Service</option>
+                                            <option value="Cybersecurity">Cybersecurity</option>
+                                            <option value="D2C">D2C</option>
+                                            <option value="DeepTech">DeepTech</option>
+                                            <option value="Delivery">Delivery</option>
+                                            <option value="Developer Tools">Developer Tools</option>
+                                            <option value="E-Commerce">E-Commerce</option>
+                                            <option value="E-Sports (Gaming)">E-Sports (Gaming)</option>
+                                            <option value="EdTech">EdTech</option>
+                                            <option value="Elder Care">Elder Care</option>
+                                            <option value="Emerging Markets">Emerging Markets</option>
+                                            <option value="Energy">Energy</option>
+                                            <option value="Enterprise">Enterprise</option>
+                                            <option value="Entertainment & Media">Entertainment & Media</option>
+                                            <option value="Events">Events</option>
+                                            <option value="Fashion">Fashion</option>
+                                            <option value="FemTech">FemTech</option>
+                                            <option value="FinTech">FinTech</option>
+                                            <option value="Food and Beverage">Food and Beverage</option>
+                                            <option value="FoodTech">FoodTech</option>
+                                            <option value="Future of Work">Future of Work</option>
+                                            <option value="GovTech">GovTech</option>
+                                            <option value="HR Tech">HR Tech</option>
+                                            <option value="Hardware">Hardware</option>
+                                            <option value="Health & Wellness">Health & Wellness</option>
+                                            <option value="Healthcare">Healthcare</option>
+                                            <option value="Hospitality">Hospitality</option>
+                                            <option value="Impact Investing">Impact Investing</option>
+                                            <option value="Industials">Industials</option>
+                                            <option value="Information Technology">Information Technology</option>
+                                            <option value="Infrastructure">Infrastructure</option>
+                                            <option value="InsurTech">InsurTech</option>
+                                            <option value="Internet">Internet</option>
+                                            <option value="IoT (Internet of Things)">IoT (Internet of Things)</option>
+                                            <option value="Legal Tech">Legal Tech</option>
+                                            <option value="Life Science">Life Science</option>
+                                            <option value="Logistics">Logistics</option>
+                                            <option value="Manufacturing">Manufacturing</option>
+                                            <option value="Market Research">Market Research</option>
+                                            <option value="Marketing (MarTech)">Marketing (MarTech)</option>
+                                            <option value="Marketplace">Marketplace</option>
+                                            <option value="Medical Device">Medical Device</option>
+                                            <option value="Meeting Software">Meeting Software</option>
+                                            <option value="Micro-Mobility">Micro-Mobility</option>
+                                            <option value="Mobile">Mobile</option>
+                                            <option value="Nanotechnology">Nanotechnology</option>
+                                            <option value='Network Security'>Network Security</option>
+                                            <option value='Neuroscience'>Neuroscience</option>
+                                            <option value='Oil & Gas'>Oil & Gas</option>
+                                            <option value='Outdoors'>Outdoors</option>
+                                            <option value='Paas (Platforms)'>Paas (Platforms)</option>
+                                            <option value='Parenting'>Parenting</option>
+                                            <option value='PetTech'>PetTech</option>
+                                            <option value='Pharmaceutical'>Pharmaceutical</option>
+                                            <option value='PoS (Point of Dale)'>PoS (Point of Dale)</option>
+                                            <option value='Privacy'>Privacy</option>
+                                            <option value='Productivity Tools'>Productivity Tools</option>
+                                            <option value='PropTech'>PropTech</option>
+                                            <option value='Quality Assurance'>Quality Assurance</option>
+                                            <option value='Recruiting'>Recruiting</option>
+                                            <option value='RestaurantTech'>RestaurantTech</option>
+                                            <option value='RetailTech'>RetailTech</option>
+                                            <option value='Ridesharing'>Ridesharing</option>
+                                            <option value='Risk Management'>Risk Management</option>
+                                            <option value='Robotics'>Robotics</option>
+                                            <option value='Saas'>Saas</option>
+                                            <option value='Sales Automation'>Sales Automation</option>
+                                            <option value='Services Industry'>Services Industry</option>
+                                            <option value='Sharing Economy'>Sharing Economy</option>
+                                            <option value='Simulation'>Simulation</option>
+                                            <option value='Social Media'>Social Media</option>
+                                            <option value='Software'>Software</option>
+                                            <option value='SpaceTech'>SpaceTech</option>
+                                            <option value='Sports'>Sports</option>
+                                            <option value='Supply Chain Tech'>Supply Chain Tech</option>
+                                            <option value='Sustainability'>Sustainability</option>
+                                            <option value='Telecommunications (TMT)'>Telecommunications (TMT)</option>
+                                            <option value='Transportation'>Transportation</option>
+                                            <option value='Travel'>Travel</option>
+                                            <option value='Wearables & Quantified Self'>Wearables & Quantified Self
+                                            </option>
+                                            <option value='Women-Founded'>Women-Founded</option>
+                                        </select>
+                                    </div>
+                                    <div class='selection'>
+                                        <label for=';location-multiple'>Location</label>
+                                        <select class="location-multiple" name="states3[]" multiple="multiple">
+                                            <option value="USA">USA</option>
+                                            <option value="UK">UK</option>
+                                            <option value="EUROPE">EUROPE</option>
+                                            <option value="ASIA">ASIA</option>
+                                            <option value="AFRICA">AFRICA</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div>
+                            <div class="banner-part">
+                                <div class="bg-img">
+                                    <div class="bg-part">
+                                        <div class="text-part">
+                                            <h2>
+                                                <i class="fa-regular fa-user" style="color: #f1f1ec"></i>All Investor
+                                            </h2>
+                                            <h3>Browse all investors on VC Sheet.</h3>
+                                        </div>
+                                    </div>
+                                 
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-content">
+                            <div class="sticky top" data-margin-top="0" data-sticky-for="1023" data-sticky-class="is-sticky">
+                                <p>Showing 6 investors</p>
+                                <select id="normalize">
+                                    <option value="1" selected>
+                                        <span class="icon"><i
+                                                class="fa-solid fa-arrow-right-arrow-left fa-rotate-90"></i></span>
+                                        <span class="text">Default order</span>
+                                    </option>
+                                    <option value="2">
+                                        <span class="icon"><i class="fa-solid fa-arrow-up-short-wide"></i></span>
+                                        <span class="text">Investor Name</span>
+                                    </option>
+                                    <option value="3">
+                                        <span class="icon"><i class="fa-solid fa-arrow-down-short-wide"></i></span>
+                                        <span class="text">Investor Name</span>
+                                    </option>
+                                    <option value="4">
+                                        <span class="icon"><i class="fa-solid fa-arrow-up-short-wide"></i></span>
+                                        <span class="text">Fund Type</span>
+                                    </option>
+                                    <option value="5">
+                                        <span class="icon"><i class="fa-solid fa-arrow-down-short-wide"></i></span>
+                                        <span class="text">Fund Type</span>
+                                    </option>
+                                    <option value="6">
+                                        <span class="icon"><i class="fa-solid fa-arrow-up-short-wide"></i></span>
+                                        <span class="text">Fund Stage</span>
+                                    </option>
+                                    <option value="7">
+                                        <span class="icon"><i class="fa-solid fa-arrow-down-short-wide"></i></span>
+                                        <span class="text">Fund Stage</span>
+                                    </option>
+                                    <option value="8">
+                                        <span class="icon"><i class="fa-solid fa-arrow-up-short-wide"></i></span>
+                                        <span class="text">Sectors</span>
+                                    </option>
+                                    <option value="9">
+                                        <span class="icon"><i class="fa-solid fa-arrow-down-short-wide"></i></span>
+                                        <span class="text">Sectors</span>
+                                    </option>
+                                    <option value="10">
+                                        <span class="icon"><i class="fa-solid fa-arrow-up-short-wide"></i></span>
+                                        <span class="text">Location</span>
+                                    </option>
+                                    <option value="11">
+                                        <span class="icon"><i class="fa-solid fa-arrow-down-short-wide"></i></span>
+                                        <span class="text">Location</span>
+                                    </option>
+                                    <option value="12">
+                                        <span class="icon"><i class="fa-solid fa-arrow-up-short-wide"></i></span>
+                                        <span class="text">Number of Investments</span>
+                                    </option>
+                                    <option value="13">
+                                        <span class="icon"><i class="fa-solid fa-arrow-down-short-wide"></i></span>
+                                        <span class="text">Number of Investments</span>
+                                    </option>
+                                    <option value="14">
+                                        <span class="icon"><i class="fa-solid fa-arrow-up-short-wide"></i></span>
+                                        <span class="text">Number of Exits</span>
+                                    </option>
+                                    <option value="15">
+                                        <span class="icon"><i class="fa-solid fa-arrow-down-short-wide"></i></span>
+                                        <span class="text">Number of Exits</span>
+                                    </option>
+                                    <option value="16">
+                                        <span class="icon"><i class="fa-solid fa-arrow-up-short-wide"></i></span>
+                                        <span class="text">Founding Year</span>
+                                    </option>
+                                    <option value="17">
+                                        <span class="icon"><i class="fa-solid fa-arrow-down-short-wide"></i></span>
+                                        <span class="text">Founding Year</span>
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="bottom-without-sticky">
+                            <div class="box">
+                                <div class="top">
+                                    <div class="profile">
+                                        <div class="profile-pic">
+                                            <img src="./assets/img/dummy-profile.png" alt="PROFILE PIC" />
+                                        </div>
+                                        <div class="profile-info">
+                                            <div class="name">
+                                                <p>Ali Rohde</p>
+                                            </div>
+                                            <div class="position">
+                                                <p>
+                                                    Co-Founder and General Partner @
+                                                    <strong>Outset Capital</strong>
+                                                </p>
+                                            </div>
+                                            <div class="about">
+                                                <p>
+                                                    Ali Rohde is the General Partner / Co-founder at
+                                                    Outset Capital.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="company">
+                                        <div class="img">
+                                            <img src="./assets/img/hexa.png" alt="Company logo" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="left">
+                                        <p>pre-seed</p>
+                                        <p>seed</p>
+                                        <p>Series A</p>
+                                    </div>
+                                    <div class="right">
+                                        <div class="website">
+                                            <a href="#">Website</a>
+                                        </div>
+                                        <div class="twitter">
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        </div>
+                                        <div class="linckedin">
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                        </div>
+                                        <div class="Facebook">
+                                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="top">
+                                    <div class="profile">
+                                        <div class="profile-pic">
+                                            <img src="./assets/img/dummy-profile.png" alt="PROFILE PIC" />
+                                        </div>
+                                        <div class="profile-info">
+                                            <div class="name">
+                                                <p>Andrew Chen</p>
+                                            </div>
+                                            <div class="position">
+                                                <p>
+                                                    General Partner @
+                                                    <strong>Andreessen Horowitz</strong>
+                                                </p>
+                                            </div>
+                                            <div class="about">
+                                                <p>
+                                                    Andrew invests in consumer technology, including
+                                                    social, marketplace, entertainment, and gaming
+                                                    experiences. Andrew is a prolific writer and leading
+                                                    voice on mobile, metrics, and user growth. For the
+                                                    past decade, he’s covered the topic on
+                                                    andrewchen.com. He is the author of The Cold Start
+                                                    Problem, which explores how new start-ups launch and
+                                                    scale by leveraging network effects. He is also a
+                                                    board member and instructor at Reforge, which offers
+                                                    selective growth-focused programs for experienced
+                                                    professionals in marketing, product, data, and
+                                                    engineering. Prior to joining a16z, Andrew led the
+                                                    Rider Growth teams at Uber.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="company">
+                                        <div class="img">
+                                            <img src="./assets/img/hexa.png" alt="Company logo" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="left">
+                                        <p>seed</p>
+                                        <p>Series A</p>
+                                        <p>series B+</p>
+                                    </div>
+                                    <div class="right">
+                                        <div class="website">
+                                            <a href="#">Website</a>
+                                        </div>
+                                        <div class="twitter">
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        </div>
+                                        <div class="linckedin">
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                        </div>
+                                        <div class="Facebook">
+                                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="top">
+                                    <div class="profile">
+                                        <div class="profile-pic">
+                                            <img src="./assets/img/dummy-profile.png" alt="PROFILE PIC" />
+                                        </div>
+                                        <div class="profile-info">
+                                            <div class="name">
+                                                <p>Anish Acharya</p>
+                                            </div>
+                                            <div class="position">
+                                                <p>
+                                                    General Partner @
+                                                    <strong>Andreessen Horowitz </strong>
+                                                </p>
+                                            </div>
+                                            <div class="about">
+                                                <p>
+                                                    Prior to joining a16z, Anish held multiple roles at
+                                                    Credit Karma including the General Manager of Core
+                                                    Product and General Manager of U.S. Card, which he
+                                                    helped scale to over 100MM members and nearly $1B in
+                                                    2019 revenue. Anish joined Credit Karma in 2015 via
+                                                    the acquisition of Snowball, a notifications startup
+                                                    he founded a year earlier. Prior to creating
+                                                    Snowball, Anish founded SocialDeck, a social-gaming
+                                                    company that was acquired by Google in 2010. He went
+                                                    on to lead various mobile product efforts as well as
+                                                    invest at Google Ventures.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="company">
+                                        <div class="img">
+                                            <img src="./assets/img/hexa.png" alt="Company logo" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="left">
+                                        <p>seed</p>
+                                        <p>Series A</p>
+                                        <p>series B+</p>
+                                    </div>
+                                    <div class="right">
+                                        <div class="website">
+                                            <a href="#">Website</a>
+                                        </div>
+                                        <div class="twitter">
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        </div>
+                                        <div class="linckedin">
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                        </div>
+                                        <div class="Facebook">
+                                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="top">
+                                    <div class="profile">
+                                        <div class="profile-pic">
+                                            <img src="./assets/img/dummy-profile.png" alt="PROFILE PIC" />
+                                        </div>
+                                        <div class="profile-info">
+                                            <div class="name">
+                                                <p>Ann Miura-Ko</p>
+                                            </div>
+                                            <div class="position">
+                                                <p>
+                                                    Co-Founding Partner @
+                                                    <strong>Floodgate</strong>
+                                                </p>
+                                            </div>
+                                            <div class="about">
+                                                <p>
+                                                    Ann Miura-Ko is a co-founding Partner at Floodgate.
+                                                    A repeat member of the Forbes Midas List and the New
+                                                    York Times Top 20 Venture Capitalists Worldwide, Ann
+                                                    was also named the “Most Powerful Woman in Startups”
+                                                    by Forbes. Ann is well-known in Silicon Valley as a
+                                                    pioneer investor in highly technical companies
+                                                    because of her background as a PhD in math modeling
+                                                    of infosec at Stanford. Her deep interest in
+                                                    technology began as a child – her father was a NASA
+                                                    rocket scientist – and her expertise developed as an
+                                                    undergraduate at Yale, where she participated in the
+                                                    Robocup Competition in Paris, France. Ann has also
+                                                    made significant investments in consumer (commerce,
+                                                    curation), marketplaces, and software for SMBs and
+                                                    solopreneurs. Some of Ann’s investments include Lyft
+                                                    (where she is still a board member), Xamarin,
+                                                    Monthly, Popshop, Emotive, and Refinery29.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="company">
+                                        <div class="img">
+                                            <img src="./assets/img/hexa.png" alt="Company logo" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="left">
+                                        <p>Pre-seed</p>
+                                        <p>seed</p>
+                                    </div>
+                                    <div class="right">
+                                        <div class="website">
+                                            <a href="#">Website</a>
+                                        </div>
+                                        <div class="twitter">
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        </div>
+                                        <div class="linckedin">
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                        </div>
+                                        <div class="Facebook">
+                                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="top">
+                                    <div class="profile">
+                                        <div class="profile-pic">
+                                            <img src="./assets/img/dummy-profile.png" alt="PROFILE PIC" />
+                                        </div>
+                                        <div class="profile-info">
+                                            <div class="name">
+                                                <p>Charles Birnbaum</p>
+                                            </div>
+                                            <div class="position">
+                                                <p>
+                                                    Partner @
+                                                    <strong>Bessemer Venture Partners</strong>
+                                                </p>
+                                            </div>
+                                            <div class="about">
+                                                <p>
+                                                    Charles Birnbaum is a partner in Bessemer’s New York
+                                                    office, where he invests in early-stage and
+                                                    promising companies in the U.S. and Europe. He has a
+                                                    strong interest in fintech infrastructure, embedded
+                                                    financial services, consumer-facing products, the
+                                                    powerful emergence of DeFi, and the consumer-facing
+                                                    companies and infrastructure players that will serve
+                                                    as a bridge between DeFi and TradFi. Before joining
+                                                    Bessemer in 2013, Charles was one of the earliest
+                                                    team members at Foursquare, the location-based
+                                                    mobile application and social network, where he
+                                                    helped to bring forth the company’s first
+                                                    merchant-facing tools.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="company">
+                                        <div class="img">
+                                            <img src="./assets/img/hexa.png" alt="Company logo" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="left">
+                                        <p>seed</p>
+                                        <p>series A</p>
+                                        <p>series B+</p>
+                                    </div>
+                                    <div class="right">
+                                        <div class="website">
+                                            <a href="#">Website</a>
+                                        </div>
+                                        <div class="twitter">
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        </div>
+                                        <div class="linckedin">
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                        </div>
+                                        <div class="Facebook">
+                                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="top">
+                                    <div class="profile">
+                                        <div class="profile-pic">
+                                            <img src="./assets/img/dummy-profile.png" alt="PROFILE PIC" />
+                                        </div>
+                                        <div class="profile-info">
+                                            <div class="name">
+                                                <p>Chetan Puttagunta</p>
+                                            </div>
+                                            <div class="position">
+                                                <p>
+                                                    General Partner @
+                                                    <strong>Benchmark</strong>
+                                                </p>
+                                            </div>
+                                            <div class="about">
+                                                <p>
+                                                    Chetan has been at Benchmark since 2018. Prior to
+                                                    that, was a general partner at NEA for seven years.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="company">
+                                        <div class="img">
+                                            <img src="./assets/img/hexa.png" alt="Company logo" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="left">
+                                        <p>seed</p>
+                                        <p>series A</p>
+                                        <p>series B+</p>
+                                    </div>
+                                    <div class="right">
+                                        <div class="website">
+                                            <a href="#">Website</a>
+                                        </div>
+                                        <div class="twitter">
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        </div>
+                                        <div class="linckedin">
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                        </div>
+                                        <div class="Facebook">
+                                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.3.0/sticky.min.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/standalone/selectize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+    $("#normalize").selectize({
+        options: [
+            {
+                value: 1,
+                text: "Default order",
+                icon: "fa-solid fa-arrow-right-arrow-left fa-rotate-90",
+            },
+            {
+                value: 2,
+                text: "Investor Name",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 3,
+                text: "Investor Name",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+            {
+                value: 4,
+                text: "Fund Type",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 5,
+                text: "Fund Type",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+            {
+                value: 6,
+                text: "Fund Stage",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 7,
+                text: "Fund Stage",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+            {
+                value: 8,
+                text: "Sectors",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 9,
+                text: "Sectors",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+            {
+                value: 10,
+                text: "Location",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 11,
+                text: "Location",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+            {
+                value: 12,
+                text: "Number of Investments",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 13,
+                text: "Number of Investments",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+            {
+                value: 14,
+                text: "Number of Exits",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 15,
+                text: "Number of Exits",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+            {
+                value: 16,
+                text: "Founding Year",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 17,
+                text: "Founding Year",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+        ],
+        render: {
+            item: function (item, escape) {
+                return (
+                    "<div class='selected-item'>" +
+                    '<i class="' + escape(item.icon) + '"></i>' +
+                    '<span class="label">' +
+                    escape(item.text) +
+                    "</span>" +
+                    "</div>"
+                );
+            },
+            option: function (data, escape) {
+                return (
+                    '<div class="option">' +
+                    '<span class="icon"><i class="' +
+                    escape(data.icon) +
+                    '"></i></span>' +
+                    '<span class="text">' +
+                    escape(data.text) +
+                    "</span>" +
+                    "</div>"
+                );
+            },
+        },
+    });
+</script>
+<script>
+    $(document).ready(function () {
+
+        $('.fundtype-multiple').select2({
+            placeholder: 'Fund Type',
+            allowClear: true,
+        });
+
+        $('.fundstage-multiple').select2({
+            placeholder: 'Fund Stage',
+            allowClear: true
+        });
+
+        $('.sectors-multiple').select2({
+            placeholder: 'Sectors',
+            allowClear: true
+        });
+
+        $('.location-multiple').select2({
+            placeholder: 'Location',
+            allowClear: true
+        });
+
+
+    });
+</script>
+<script>
+     var sticky = new Sticky('.sticky');
+</script>
+
+</html>
