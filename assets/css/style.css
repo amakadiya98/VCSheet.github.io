@@ -103,7 +103,7 @@ body {
   gap: 15px;
 }
 .home .content .banner-part .bg-img .text-part h2 i {
-  /* color: #f1f1eb !important; */
+  color: #111 !important;
 }
 .home .content .banner-part .bg-img .text-part h3 {
   padding-right: 60px;
