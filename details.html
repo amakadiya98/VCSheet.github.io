@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/css/selectize.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/details.css">
+    <title>FunderVc</title>
+</head>
+
+<body>
+    <div class="home">
+        <div class="container-fluid">
+            <div class="content">
+                <div class="row" data-sticky-container>
+                    <div class="col-lg-4">
+                        <div class='left-side'>
+                            <div class='vertical-row'>
+                                <a href='#' class="logo-link">
+                                    <img src='./assets/img/logo.svg' alt='logo' />
+                                </a>
+                                <div class='filter-box'>
+                                    <p>Filters</p>
+                                    <div class='selection'>
+                                        <label for='select-multiple-1'>Fund Type</label>
+                                        <select class="fundtype-multiple" name="states[]" multiple="multiple">
+                                            <option value="Accelerator">Accelerator</option>
+                                            <option value="Angel Investor">Angel Investor</option>
+                                            <option value="Angel Network">Angel Network</option>
+                                            <option value="Corporate VC">Corporate VC</option>
+                                            <option value="Family Office">Family Office</option>
+                                            <option value="Venture Fund">Venture Fund</option>
+                                        </select>
+                                    </div>
+                                    <div class='selection'>
+                                        <label for='fundstage-multiple'>Fund Stage</label>
+                                        <select class="fundstage-multiple" name="states1[]" multiple="multiple">
+                                            <option value="Pre-Seed">Pre-Seed</option>
+                                            <option value="Seed">Seed</option>
+                                            <option value="Series A">Series A</option>
+                                            <option value="Series B">Series B</option>
+                                            <option value="Series C">Series C</option>
+                                            <option value='Series D'>Series D</option>
+                                        </select>
+                                    </div>
+                                    <div class='selection'>
+                                        <label for='select-multiple-3'>Sectors</label>
+                                        <select class="sectors-multiple" name="states2[]" multiple="multiple">
+                                            <option value="Advanced Materials">Advanced Materials</option>
+                                            <option value="Advertising(AdTech)">Advertising(AdTech)</option>
+                                            <option value="Apps">Apps</option>
+                                            <option value="Arfitificial Intelligence & Machine Learning (AI/ML)">
+                                                Arfitificial Intelligence & Machine Learning (AI/ML)</option>
+                                            <option value="AssistiveTech">AssistiveTech</option>
+                                            <option value="AudioTech">AudioTech</option>
+                                            <option value="Augmented & Virtual Reality (AR/VR)">Augmented & Virtual
+                                                Reality (AR/VR)</option>
+                                            <option value="B2B">B2B</option>
+                                            <option value="B2C">B2C</option>
+                                            <option value="Beauty">Beauty</option>
+                                            <option value="Big Data & Analytics">Big Data & Analytics</option>
+                                            <option value="BioTech">BioTech</option>
+                                            <option value="Black / African American Founded">Black / African American
+                                                Founded</option>
+                                            <option value="CMS">CMS</option>
+                                            <option value="CPG">CPG</option>
+                                            <option value="CRM">CRM</option>
+                                            <option value="Cannabis">Cannabis</option>
+                                            <option value="ClimateTech & CleanTech">ClimateTech & CleanTech</option>
+                                            <option value="CloudTech">CloudTech</option>
+                                            <option value="Collaboration">Collaboration</option>
+                                            <option value="Communications Infrastructure">Communications Infrastructure
+                                            </option>
+                                            <option value="Community">Community</option>
+                                            <option value="Computer">Computer</option>
+                                            <option value="Construction Tech">Construction Tech</option>
+                                            <option value="Consulting">Consulting</option>
+                                            <option value="Consumer">Consumer</option>
+                                            <option value="Consumer Electronics">Consumer Electronics</option>
+                                            <option value="Consumer Goods">Consumer Goods</option>
+                                            <option value="Consumer Internet">Consumer Internet</option>
+                                            <option value="Creator Economy">Creator Economy</option>
+                                            <option value="Cryptocurrency / Blockchain">Cryptocurrency / Blockchain
+                                            </option>
+                                            <option value="Customer Service">Customer Service</option>
+                                            <option value="Cybersecurity">Cybersecurity</option>
+                                            <option value="D2C">D2C</option>
+                                            <option value="DeepTech">DeepTech</option>
+                                            <option value="Delivery">Delivery</option>
+                                            <option value="Developer Tools">Developer Tools</option>
+                                            <option value="E-Commerce">E-Commerce</option>
+                                            <option value="E-Sports (Gaming)">E-Sports (Gaming)</option>
+                                            <option value="EdTech">EdTech</option>
+                                            <option value="Elder Care">Elder Care</option>
+                                            <option value="Emerging Markets">Emerging Markets</option>
+                                            <option value="Energy">Energy</option>
+                                            <option value="Enterprise">Enterprise</option>
+                                            <option value="Entertainment & Media">Entertainment & Media</option>
+                                            <option value="Events">Events</option>
+                                            <option value="Fashion">Fashion</option>
+                                            <option value="FemTech">FemTech</option>
+                                            <option value="FinTech">FinTech</option>
+                                            <option value="Food and Beverage">Food and Beverage</option>
+                                            <option value="FoodTech">FoodTech</option>
+                                            <option value="Future of Work">Future of Work</option>
+                                            <option value="GovTech">GovTech</option>
+                                            <option value="HR Tech">HR Tech</option>
+                                            <option value="Hardware">Hardware</option>
+                                            <option value="Health & Wellness">Health & Wellness</option>
+                                            <option value="Healthcare">Healthcare</option>
+                                            <option value="Hospitality">Hospitality</option>
+                                            <option value="Impact Investing">Impact Investing</option>
+                                            <option value="Industials">Industials</option>
+                                            <option value="Information Technology">Information Technology</option>
+                                            <option value="Infrastructure">Infrastructure</option>
+                                            <option value="InsurTech">InsurTech</option>
+                                            <option value="Internet">Internet</option>
+                                            <option value="IoT (Internet of Things)">IoT (Internet of Things)</option>
+                                            <option value="Legal Tech">Legal Tech</option>
+                                            <option value="Life Science">Life Science</option>
+                                            <option value="Logistics">Logistics</option>
+                                            <option value="Manufacturing">Manufacturing</option>
+                                            <option value="Market Research">Market Research</option>
+                                            <option value="Marketing (MarTech)">Marketing (MarTech)</option>
+                                            <option value="Marketplace">Marketplace</option>
+                                            <option value="Medical Device">Medical Device</option>
+                                            <option value="Meeting Software">Meeting Software</option>
+                                            <option value="Micro-Mobility">Micro-Mobility</option>
+                                            <option value="Mobile">Mobile</option>
+                                            <option value="Nanotechnology">Nanotechnology</option>
+                                            <option value='Network Security'>Network Security</option>
+                                            <option value='Neuroscience'>Neuroscience</option>
+                                            <option value='Oil & Gas'>Oil & Gas</option>
+                                            <option value='Outdoors'>Outdoors</option>
+                                            <option value='Paas (Platforms)'>Paas (Platforms)</option>
+                                            <option value='Parenting'>Parenting</option>
+                                            <option value='PetTech'>PetTech</option>
+                                            <option value='Pharmaceutical'>Pharmaceutical</option>
+                                            <option value='PoS (Point of Dale)'>PoS (Point of Dale)</option>
+                                            <option value='Privacy'>Privacy</option>
+                                            <option value='Productivity Tools'>Productivity Tools</option>
+                                            <option value='PropTech'>PropTech</option>
+                                            <option value='Quality Assurance'>Quality Assurance</option>
+                                            <option value='Recruiting'>Recruiting</option>
+                                            <option value='RestaurantTech'>RestaurantTech</option>
+                                            <option value='RetailTech'>RetailTech</option>
+                                            <option value='Ridesharing'>Ridesharing</option>
+                                            <option value='Risk Management'>Risk Management</option>
+                                            <option value='Robotics'>Robotics</option>
+                                            <option value='Saas'>Saas</option>
+                                            <option value='Sales Automation'>Sales Automation</option>
+                                            <option value='Services Industry'>Services Industry</option>
+                                            <option value='Sharing Economy'>Sharing Economy</option>
+                                            <option value='Simulation'>Simulation</option>
+                                            <option value='Social Media'>Social Media</option>
+                                            <option value='Software'>Software</option>
+                                            <option value='SpaceTech'>SpaceTech</option>
+                                            <option value='Sports'>Sports</option>
+                                            <option value='Supply Chain Tech'>Supply Chain Tech</option>
+                                            <option value='Sustainability'>Sustainability</option>
+                                            <option value='Telecommunications (TMT)'>Telecommunications (TMT)</option>
+                                            <option value='Transportation'>Transportation</option>
+                                            <option value='Travel'>Travel</option>
+                                            <option value='Wearables & Quantified Self'>Wearables & Quantified Self
+                                            </option>
+                                            <option value='Women-Founded'>Women-Founded</option>
+                                        </select>
+                                    </div>
+                                    <div class='selection'>
+                                        <label for=';location-multiple'>Location</label>
+                                        <select class="location-multiple" name="states3[]" multiple="multiple">
+                                            <option value="USA">USA</option>
+                                            <option value="UK">UK</option>
+                                            <option value="EUROPE">EUROPE</option>
+                                            <option value="ASIA">ASIA</option>
+                                            <option value="AFRICA">AFRICA</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="profile-card">
+                            <div class="image-part">
+                                <img src="./assets/img/cover.jpeg" alt="screenshot" class="cover-image"/>
+                                <div class="profile-image">
+                                    <img src="./assets/img/web-logo.png" alt="web-logo" class="web-logo"/>
+                                </div>
+                                <div class="connect-card">
+                                    <div class="connect-content-part">
+                                        <!-- <p>HOW TO GET IN TOUCH</p> -->
+                                        <div class="right">
+                                            <div class="website">
+                                                <a href="#">Website</a>
+                                            </div>
+                                            <div class="twitter common-social">
+                                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                            </div>
+                                            <div class="linckedin common-social">
+                                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            </div>
+                                            <div class="Facebook common-social">
+                                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-content-part">
+                            <div class="content-part">
+                                <h6>Ali Rohde</h6>
+                                <p>Co-Founder and General Partner <span>@</span> <strong>Outset Capital</strong></p>
+                            </div>
+                           
+                            <div class="line-form-part">
+                                <div class="line">
+                                    <div class="left">
+                                        <p class="label">Location</p>
+                                    </div>
+                                    <div class="right">
+                                     <h6 class="location">San Francisco, California</h6>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="left">
+                                        <p class="label">Notable investments</p>
+                                    </div>
+                                    <div class="right">
+                                        <p class="custom-badge">Medra</p>
+                                        <p class="custom-badge">Kindred</p>
+                                        <p class="custom-badge">Charge Robotics</p>
+                                        <p class="custom-badge">Banana.dev</p>
+                                        <p class="custom-badge">Candor</p>
+                                        <p class="custom-badge">Motif</p>
+                                        <p class="custom-badge">Meliora Therapeutics</p>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="left">
+                                        <p class="label">Check size range(s)</p>
+                                    </div>
+                                    <div class="right">
+                                        <p class="custom-badge">$0 - $100K  </p>
+                                        <p class="custom-badge">$100K - $500K</p>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="left">
+                                        <p class="label">Rounds their fund invests in</p>
+                                    </div>
+                                    <div class="right">
+                                        <p class="custom-badge">Pre-Seed</p>
+                                        <p class="custom-badge">Seed</p>
+                                        <p class="custom-badge">Series A</p>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="left">
+                                        <p class="label">Sectors their fund invests in</p>
+                                    </div>
+                                    <div class="right">
+                                        <p class="custom-badge">AI / Devtools</p>
+                                        <p class="custom-badge">Enterprise</p>
+                                        <p class="custom-badge">Fintech</p>
+                                        <p class="custom-badge">Deeptech</p>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="left">
+                                        <p class="label">Geographies their fund invests in</p>
+                                    </div>
+                                    <div class="right">
+                                        <p class="custom-badge">USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="twitter-block">
+                                <h6>Twitter</h6>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.3.0/sticky.min.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/standalone/selectize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+    $("#normalize").selectize({
+        options: [
+            {
+                value: 1,
+                text: "Default order",
+                icon: "fa-solid fa-arrow-right-arrow-left fa-rotate-90",
+            },
+            {
+                value: 2,
+                text: "Investor Name",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 3,
+                text: "Investor Name",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+            {
+                value: 4,
+                text: "Fund Type",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 5,
+                text: "Fund Type",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+            {
+                value: 6,
+                text: "Fund Stage",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 7,
+                text: "Fund Stage",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+            {
+                value: 8,
+                text: "Sectors",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 9,
+                text: "Sectors",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+            {
+                value: 10,
+                text: "Location",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 11,
+                text: "Location",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+            {
+                value: 12,
+                text: "Number of Investments",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 13,
+                text: "Number of Investments",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+            {
+                value: 14,
+                text: "Number of Exits",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 15,
+                text: "Number of Exits",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+            {
+                value: 16,
+                text: "Founding Year",
+                icon: "fa-solid fa-arrow-up-short-wide",
+            },
+            {
+                value: 17,
+                text: "Founding Year",
+                icon: "fa-solid fa-arrow-down-short-wide",
+            },
+        ],
+        render: {
+            item: function (item, escape) {
+                return (
+                    "<div class='selected-item'>" +
+                    '<i class="' + escape(item.icon) + '"></i>' +
+                    '<span class="label">' +
+                    escape(item.text) +
+                    "</span>" +
+                    "</div>"
+                );
+            },
+            option: function (data, escape) {
+                return (
+                    '<div class="option">' +
+                    '<span class="icon"><i class="' +
+                    escape(data.icon) +
+                    '"></i></span>' +
+                    '<span class="text">' +
+                    escape(data.text) +
+                    "</span>" +
+                    "</div>"
+                );
+            },
+        },
+    });
+</script>
+<script>
+    $(document).ready(function () {
+
+        $('.fundtype-multiple').select2({
+            placeholder: 'Fund Type',
+            allowClear: true,
+        });
+
+        $('.fundstage-multiple').select2({
+            placeholder: 'Fund Stage',
+            allowClear: true
+        });
+
+        $('.sectors-multiple').select2({
+            placeholder: 'Sectors',
+            allowClear: true
+        });
+
+        $('.location-multiple').select2({
+            placeholder: 'Location',
+            allowClear: true
+        });
+
+
+    });
+</script>
+<script>
+     var sticky = new Sticky('.sticky');
+</script>
+
+</html>

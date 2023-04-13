@@ -147,6 +147,7 @@ body {
 }
 .bottom-without-sticky{
   padding: 0 37px 15px;
+  width: 100%;
 }
 .home .content .box-content .top.is-sticky{
   background-color: #f1f1ec;
@@ -190,10 +191,9 @@ body {
   flex: 4;
 }
 .home .content .box-content .box .top .profile .profile-pic {
-  width: 100%;
-  height: 100%;
+  width: 120px;
+  height: 120px;
   margin-right: 15px;
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,14 +202,29 @@ body {
   padding: 20px;
 }
 .home .content .box-content .box .top .profile .profile-pic img {
-  width: 100%;
+  width: 80px;
   border-radius: 50%;
 }
+.home .content .box-content .box .top .profile .link-block a{
+  text-decoration: none;
+}
 .home .content .box-content .box .top .profile .profile-info {
-  flex: 7;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.link-block{
+  display: flex;
+  align-items: center;
 }
 .home .content .box-content .box .top .profile .profile-info p {
   margin: 0;
+  width: 480px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .home .content .box-content .box .top .company {
   display: flex;
